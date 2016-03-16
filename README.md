@@ -54,7 +54,7 @@ git commits and tags, and push the `.gem` file to
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at
-https://github.com/[USERNAME]/pretty_timeouts.
+https://github.com/avvo/pretty_timeouts.
 
 ## License
 
