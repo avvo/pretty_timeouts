@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["donald.plummer@gmail.com"]
 
   spec.summary       = %q{A faraday middleware to make timeouts prettier}
-  spec.homepage      = "https://github.com/dplummer/pretty_timeouts"
+  spec.homepage      = "https://github.com/avvo/pretty_timeouts"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
