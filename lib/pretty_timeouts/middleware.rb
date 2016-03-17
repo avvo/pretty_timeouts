@@ -9,9 +9,7 @@ module PrettyTimeouts
       begin
         @app.call(env)
       rescue Faraday::Error::TimeoutError => e
-        timeout = env[:request][:timeout]
-        url = env[:url]
-        error = ::PrettyTimeouts::TimeoutError.new("#{@service_name} timeout of #{timeout}s reached attempting to connect to #{url}")
+        error = ::PrettyTimeouts::TimeoutError.new(@service_name, env[:request][:timeout], env[:url])
         error.set_backtrace e.backtrace
         raise error
       end
